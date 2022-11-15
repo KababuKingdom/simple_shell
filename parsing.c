@@ -16,7 +16,7 @@ char **parse_cmd(char *input)
 	tokens = malloc(sizeof(char *) * buffsize);
 	if (!tokens)
 	{
-		perror("hsh");
+		perror("Sash");
 		return (NULL);
 	}
 

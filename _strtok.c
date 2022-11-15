@@ -1,10 +1,12 @@
 #include "shell.h"
+
 /**
  * check_delim - Checks If A Character Match Any Char *
  * @c: Character To Check
  * @str: String To Check
- * Return: 1 Succes, 0 Failed
+ * Return: 1 on Success, 0 on Failure
  */
+
 unsigned int check_delim(char c, const char *str)
 {
 	unsigned int i;
@@ -23,6 +25,7 @@ unsigned int check_delim(char c, const char *str)
  * @delim: Delimiter
  * Return: Pointer To The Next Token Or NULL
  */
+
 char *_strtok(char *str, const char *delim)
 {
 	static char *ts;
@@ -39,6 +42,7 @@ char *_strtok(char *str, const char *delim)
 		if (check_delim(ts[i], delim) == 0)
 			break;
 	}
+
 	if (nt[i] == '\0' || nt[i] == '#')
 	{
 		nt = NULL;
@@ -46,11 +50,13 @@ char *_strtok(char *str, const char *delim)
 	}
 	ts = nt + i;
 	nt = ts;
+
 	for (i = 0; nt[i] != '\0'; i++)
 	{
 		if (check_delim(nt[i], delim) == 1)
 			break;
 	}
+
 	if (nt[i] == '\0')
 		nt = NULL;
 	else
@@ -60,5 +66,6 @@ char *_strtok(char *str, const char *delim)
 		if (*nt == '\0')
 			nt = NULL;
 	}
+
 	return (ts);
 }
