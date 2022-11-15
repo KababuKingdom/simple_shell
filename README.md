@@ -17,4 +17,12 @@ Watch how we code :-)
 
 M.S + W.S
 
-+254
+HOW IT WORKS
+
+To compile, use the following script
+ gcc -Wall -Werror -Wextra -pedantic *.c -o Sash
+
+Afterwards you will see the new shell which Wabi Sherie and Mutua Solomon have dubbed Sash.
+
+To use it,
+	./Sash
