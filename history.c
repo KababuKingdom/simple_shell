@@ -1,9 +1,11 @@
 #include "shell.h"
+
 /**
  * history - Fill File By User Input
  * @input: User Input
  * Return: -1 Fail 0 Succes
  */
+
 int history(char *input)
 {
 	char *filename = ".simple_shell_history";
@@ -25,11 +27,13 @@ int history(char *input)
 	}
 	return (1);
 }
+
 /**
  * free_env - Free Enviroment Variable Array
  * @env:  Environment variables.
  * Return: Void
  */
+
 void free_env(char **env)
 {
 	int i;

@@ -49,7 +49,7 @@ char *_strchr(char *s, char c);
 int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strdup(char *str);
 
-/**###### MEMORIE  MANGMENT ####*/
+/**###### MEMORY MANAGEMENT###*/
 
 void free_env(char **env);
 void *fill_an_array(void *a, int el, unsigned int len);
@@ -98,7 +98,7 @@ void _prerror(char **argv, int c, char **cmd);
 
 
 /**
- * struct bulltin - contain bultin to handle and function to excute
+ * struct bulltin - contain builtin to execute
  * @command:pointer to char
  * @fun:fun to excute when bultin true
  */
